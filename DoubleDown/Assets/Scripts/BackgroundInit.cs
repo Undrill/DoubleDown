@@ -5,8 +5,7 @@ using UnityEngine;
 public class BackgroundInit : MonoBehaviour {
 
     public GameObject background;
-    public GameObject emptyBackgrounds;
-    public int numberOfBackgrounds = 0;
+    public int numberOfBackgrounds;
     private int Stage = 0;
     private float backgroundHeight;
 
@@ -17,7 +16,7 @@ public class BackgroundInit : MonoBehaviour {
 
         for (int i = 0; i < numberOfBackgrounds; i++)
         {
-            Instantiate(background, new Vector3(0, i*backgroundHeight,0), Quaternion.identity, emptyBackgrounds.transform);
+            Instantiate(background, new Vector3(0, i*backgroundHeight,0), Quaternion.identity);
             Stage++;
         }
     }
