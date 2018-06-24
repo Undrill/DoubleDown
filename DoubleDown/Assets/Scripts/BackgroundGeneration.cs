@@ -5,6 +5,7 @@ using UnityEngine;
 public class BackgroundGeneration : MonoBehaviour
 {
 
+    //Background Generation
     public GameObject background;
     public int numberOfBackgrounds;
     private int Stage = 0;
@@ -13,7 +14,6 @@ public class BackgroundGeneration : MonoBehaviour
     void Start()
     {
         backgroundHeight = background.transform.localScale.y;
-
 
         for (int i = 0; i < numberOfBackgrounds; i++)
         {
